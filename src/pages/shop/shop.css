@@ -1,0 +1,135 @@
+.shop{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+img{
+    max-width: 100%;
+}
+h1{
+   font-size: 3rem; 
+   font-weight: 700;
+   padding-left: 1rem;
+}
+
+.shop-title{
+    border-bottom: 2px solid #e7880c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 2rem;
+    margin-bottom: 4rem;
+}
+
+.shop-title img {
+    width: 85%;
+    padding: 4rem 0;
+}
+
+span{
+    color: rgba(231, 136, 12);
+}
+
+.products{
+    display: grid;
+    margin: 0 auto;
+    gap: 20px;
+}
+@media screen and (min-width: 600px) {
+    .products {
+      grid-template-columns: auto auto;
+      gap: 40px;
+    }
+
+    .d-block{
+        height: 70vh;
+    }
+
+    .nav-logo{
+        width: 8rem;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .products {
+      grid-template-columns: auto auto auto;
+      gap: 40px;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    .shop-title img{
+        width: 60%;
+    }
+
+    .d-block{
+        height: 100vh;
+    }
+
+    .nav-logo{
+        width: 12rem;
+    }
+  }
+
+.product{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 26rem;
+    padding: 1rem;
+    width: 17rem;
+}
+
+.addToCartBtn{
+    background-color: rgb(225, 92, 15);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+}
+
+.addToCartBtn p{
+    color: #fff;
+}
+
+.addToCartBtn:hover, .addToCartBtn p:hover{
+    font-weight: 700;
+}
+
+.description{
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.product img{
+    width: 90%;
+    height: 15rem;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.product-name{
+    margin: 4px 0 10px;
+    font-size: 1.2rem;
+}
+
+.product-price{
+    font-weight: 900;
+}
+
+/* carousel css */
+
+.d-block{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 1;
+    object-fit: cover;
+    min-height: 26rem;
+}

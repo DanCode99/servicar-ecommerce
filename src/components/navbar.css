@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    background-color: rgb(225, 92, 15);
+    display: flex;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-link{
+    margin-left: auto;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid rgb(225, 92, 15);
+    font-weight: bold;
+}
+
+i{
+    color:#fff;
+}
+
+a:hover{
+    border-color: #fff;
+    color:White;
+}
+
+.nav-cart{
+    margin-left: 1rem;
+}
